@@ -1,0 +1,130 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.upload-container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    cursor: pointer;
+    
+    margin-bottom: 20px;
+}
+
+.drop-area p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.drop-area span {
+    color: #4a90e2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#fileElement {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.uploaded-image {
+    position: relative;
+}
+
+.progress-bar {
+    height: 4px;
+    background: #4a90e2;
+    border-radius: 0 0 10px 10px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5f5f;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-delete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirm-delete.hidden {
+    display: none;
+}
+
+.confirm-delete button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#cancelBtn {
+    background: #ccc;
+}
+
+#deleteBtn {
+    background: #ff5f5f;
+    color: white;
+}
+svg{
+    margin-bottom: 20px;
+    color: #6254fc;
+    font-size: 100px;
+    border-radius: 20px;
+}
+
+/* -------screens------- */
+@media (max-width: 768px) {
+    .upload-container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .upload-container{
+        width: 80%;
+    }
+}
